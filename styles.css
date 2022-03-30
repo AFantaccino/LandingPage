@@ -1,10 +1,15 @@
 * {
     font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
 }
 
 body {
     display: flex;
     flex-direction: column;
+}
+
+body > * {
+    padding: 16px 200px;
 }
 
 .header, .footer {
@@ -22,15 +27,23 @@ li a {
 }
 
 button {
-    height: 50px;
-    /* finish this */
+    width: 85px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    color: white;
+    border-style: solid
+}
+
+.header button {
+    background-color: #3882f6;
 }
 
 .navbar, .main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 64px;
+    padding: 16px 200px;
 }
 
 .navbar ul {
@@ -38,27 +51,77 @@ button {
     gap: 8px;
 }
 
+.header img {
+    width: 500px;
+    height: 200px;
+}
+
+.main {
+    display: flex;
+}
+
+.textblock {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .photos {
+    padding: 32px 64px 64px 64px;
     text-align: center;
-    padding: 0px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .squares {
     display: flex;
     justify-content: center;
-    gap: 52px;
+    gap: 64px;
+}
+
+.photos h1 {
+    font-size: 36px;
+    font-weight:bolder;
+    color: #1F2937;
+}
+
+.photos img {
+    width: 125px;
+    height: 125px;
+    border: 5px solid #3882f6;
+    border-radius: 25px;
+}
+
+.info {
+    max-width: 125px;
+}
+
+.text {
+    font-size: 13px;
+}
+
+.quotecontenitor {
+    background-color: #E5E7EB;
+    padding: 0px 64px;
+    display: flex;
+    justify-content: center;
 }
 
 .quote {
-    background-color: #E5E7EB;
-    padding: 0px 64px;
+    padding: 32px;
+    margin: 32px;
+    width: 700px;
+    
 }
 
 .quote h4 {
     text-align: right;
+    margin-right: 32px;
 }
 
-.test {
+.signupcontenitor {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -69,12 +132,23 @@ button {
     padding: 32px;
     margin: 32px;
     background-color: #3882f6;
-    width: 500px;
-    height: 100px;
+    border-radius: 10px;
+    width: 700px;
+    height: 50px;
+    color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-/* .signup button {
-    
-} */
+.signup button {
+    background: transparent;
+    border-color: white;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
